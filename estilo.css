@@ -107,3 +107,9 @@ html{
 .inicio .contenido-banner .redes a:hover{
     background-color: #C13D21;
 }
+.seccion {
+    display: none; /* Por defecto todas las secciones están ocultas */
+}
+.seccion.activa {
+    display: block; /* Sección visible cuando tiene la clase activa */
+}
