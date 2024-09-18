@@ -6,7 +6,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Portafolio</title>
     <link rel="stylesheet" href="estilo.css"> 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 <body>
     <!-- Menu del encabezado-->
@@ -17,15 +16,15 @@
             </div>
             <nav id="nav">
                 <ul>
-                    <li> <a href="#inicio">Inicio</a></li>
-                    <li> <a href="#Sobremi">Sobre mi</a></li>
-                    <li> <a href="#Conocimiento">Conocimiento</a></li>
-                    <li> <a href="#Curriculum">Curriculum</a></li>
-                    <li> <a href="#Portafolio">Portafolio</a></li>
-                    <li> <a href="#Contacto">Contacto</a></li>
+                    <li> <a href="#inicio" onclick="seleccionar()">Inicio</a></li>
+                    <li> <a href="#sobremi" onclick="seleccionar()">Sobre mi</a></li>
+                    <li> <a href="#habilidades" onclick="seleccionar()">Habilidades</a></li>
+                    <li> <a href="#curriculum" onclick="seleccionar()">Curriculum</a></li>
+                    <li> <a href="#portafolio" onclick="seleccionar()">Portafolio</a></li>
+                    <li> <a href="#contacto" onclick="seleccionar()">Contacto</a></li>
                 </ul>
             </nav>
-            <div class="nav-responsive">
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
                 <i class="fa-solid fa-bars"></i>
             </div>
         </header>
@@ -45,11 +44,275 @@
         </div>
     </section>
     <!--Seccion sobre mi-->
-    <section id="Sobremi" class="Sobremi">
-        <div class="contenido">
-            
-        </div>
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre mi</h2>
+            <p><span>Hola, soy Daniel Peña</span> Soy Tecnologo en desarrollo de software, 
+                y he ejercido mayormente como tecnico en sistemas en diversas empresas tanto 
+                del mundo del sector privado y el sector publico, me especializo mayormente en php,
+                javascrip y css.
+            </p>
+            <div class="fila">
+                <!--Datos personales-->
+                <div class="col">
+                    <h3>Datos personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Cumpleaños</strong>
+                            31 de agosto
+                        </li>
+                        <li>
+                            <strong>Telefono</strong>
+                            312456789
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            quierotrabajo@gmail.com
+                        </li>
+                        <li>
+                            <strong>Cargo</strong>
+                            <span>FREELANCE</span>
+                        </li>
+                    </ul>
 
+                </div>
+                <!--Intereses-->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenido-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>Juegos</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-music"></i>
+                            <span>Musica</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-volleyball"></i>
+                            <span>Deporte</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>Viajar</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button>
+                Descargar HV <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+            </button>
+        </div>
     </section>
+    <!--Seccion Habilidades-->
+    <section class="habilidades" id="habilidades">
+        <div class="contenido-seccion">
+            <h2>Habilidades</h2>
+            <div class="fila">
+                <!--Habilidades tecnicas-->
+                <div class="col">
+                    <h3>Habilidades Tecnicas</h3>
+                    <div class="habilidad">
+                        <span>Javascrip</span>
+                        <div class="barra-habilidad">
+                            <div class="progreso">
+                                <span>55%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="habilidad">
+                        <span>HTML & CSS</span>
+                        <div class="barra-habilidad">
+                            <div class="progreso javascrip">
+                                <span>60%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="habilidad">
+                        <span>Python</span>
+                        <div class="barra-habilidad">
+                            <div class="progreso">
+                                <span>40%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Habilidades profesionlaes-->
+                <div class="col">
+                    <h3>Habilidades Profesionales</h3>
+                    <div class="habilidad">
+                        <span>Comunicación</span>
+                        <div class="barra-habilidad">
+                            <div class="progreso">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="habilidad">
+                        <span>Trabajo en equipo</span>
+                        <div class="barra-habilidad">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="habilidad">
+                        <span>Creatividad</span>
+                        <div class="barra-habilidad">
+                            <div class="progreso">
+                                <span>50%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="habilidad">
+                        <span>Dedicación</span>
+                        <div class="barra-habilidad">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Seccion Curriculum-->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Tecnico en Sistemas</h4>
+                        <span class="casa">Servicio Nacional de Aprendizaje (SENA)</span>
+                        <span class="fecha">2020 - 2021</span>
+                        <p>Graduado con exelentes calificaciones y con la recomendacion y elogios de la mayoria de sus profesores,
+                            se graduo con gran capacidad profesional para asumir cualquier proyecto que le presenten.
+                        </p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Tecnologo en desarrollo de software</h4>
+                        <span class="casa">Universidad del Valle</span>
+                        <span class="fecha">2022 - 2025</span>
+                        <p>Graduado con exelentes calificaciones y con la recomendacion y elogios de la mayoria de sus profesores,
+                            se graduo con gran capacidad profesional para asumir cualquier proyecto que le presenten.
+                        </p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col derecha">
+                    <h3>Experiencia de trabajo</h3>
+                    <div class="item der">
+                        <h4>Tecnico Auxiliar del Area de Gestion Tecnologica</h4>
+                        <span class="casa">Emquilichao E.S.P</span>
+                        <span class="fecha">6 meses</span>
+                        <p>Realizaba actividades tales como, atencion al publico, resolviendo dudas internas
+                            como a los demas empleados de la empresa y de cara al publico externo, reparacion de 
+                            equipos de la empresa, mantenimiento de la red interna y externa de la empresa y cargue/reporte de 
+                            documentos publicos a las entidades correspondientes.
+                        </p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Tecnico en Sistemas</h4>
+                        <span class="casa">Universidad del Valle</span>
+                        <span class="fecha">2 años</span>
+                        <p>Realizo actividades tales como, atencion al publico, resolviendo dudas a los demas empleados 
+                            de la empresa y de cara al publico externo, reparacion de equipos de la empresa, 
+                            mantenimiento de la red interna y externa de la empresa y apoyo en la organizacion de diversos 
+                            montajes para ciertos eventos de la empresa.
+                        </p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Seccion portafolio-->
+    <section id="portafolio" class="portafolio">
+        <div class="contenido-seccion">
+            <h2>Portafolio</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="img/1.png" alt="">
+                    <div class="overlay">
+                        <h3>Login para un banco</h3>
+                        <p>Prototipo para un login de un proyecto con un banco.</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/2.png" alt="">
+                    <div class="overlay">
+                        <h3>Interfaz de un sistema para una empresa de estacionamientos</h3>
+                        <p>Prototipo para un posible software para empresas de estacionamientos.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Seccion contacto-->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>Contacto</h2>
+            <div class="fila">
+                <!--Formulario-->
+                <div class="col">
+                    <input type="text" placeholder="Tú nombre">
+                    <input type="text" placeholder="Numero de telefono">
+                    <input type="text" placeholder="Email">
+                    <input type="text" placeholder="Tema a tratar">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <button>
+                        Enviar mensaje <i class="fa-solid fa-message"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+                <!--Mapa-->
+                <div class="col">
+                    <img src="img/map.png" alt="">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-map"></i>
+                                Santander de Quilichao
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile"></i>
+                                Llamanos: 312456879
+                            </li>
+                            <li></li>
+                                <i class="fa-regular fa-envelope"></i>
+                                Email: quierotrabajo@gmail.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Footer-->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angle-up"></i>
+        </a>
+        <div class="redes">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+            
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
