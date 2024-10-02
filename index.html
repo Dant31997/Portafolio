@@ -6,75 +6,80 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Portafolio</title>
     <link rel="stylesheet" href="estilo.css"> 
+    <style>
+        /* Estilo para el botón de ubicación */
+        .btn-ubicacion {
+            background-color: #007BFF; /* Color de fondo */
+            color: white; /* Color del texto */
+            padding: 10px 20px; /* Espaciado */
+            border: none; /* Sin borde */
+            border-radius: 5px; /* Bordes redondeados */
+            text-decoration: none; /* Sin subrayado */
+            font-size: 16px; /* Tamaño de fuente */
+            transition: background-color 0.3s; /* Transición suave */
+        }
+
+        .btn-ubicacion:hover {
+            background-color: #0056b3; /* Color de fondo al pasar el ratón */
+        }
+    </style>
 </head>
 <body>
     <!-- Menu del encabezado-->
-     <div class="contenedor-header">
+    <div class="contenedor-header">
         <header>
             <div class="logo">
                 <a href="#">Daniel</a>
             </div>
             <nav id="nav">
                 <ul>
-                    <li> <a href="#inicio" onclick="seleccionar()">Inicio</a></li>
-                    <li> <a href="#sobremi" onclick="seleccionar()">Sobre mi</a></li>
-                    <li> <a href="#habilidades" onclick="seleccionar()">Habilidades</a></li>
-                    <li> <a href="#curriculum" onclick="seleccionar()">Curriculum</a></li>
-                    <li> <a href="#portafolio" onclick="seleccionar()">Portafolio</a></li>
-                    <li> <a href="#contacto" onclick="seleccionar()">Contacto</a></li>
+                    <li><a href="#inicio" onclick="seleccionar()">Inicio</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">Sobre mi</a></li>
+                    <li><a href="#habilidades" onclick="seleccionar()">Habilidades</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">Curriculum</a></li>
+                    <li><a href="#portafolio" onclick="seleccionar()">Portafolio</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">Contacto</a></li>
                 </ul>
             </nav>
             <div class="nav-responsive" onclick="mostrarOcultarMenu()">
                 <i class="fa-solid fa-bars"></i>
             </div>
         </header>
-     </div>
-    <!--Seccion de inicio-->
+    </div>
+    <!--Sección de inicio-->
     <section id="inicio" class="inicio">
         <div class="contenido-banner">
             <div class="contenedor-img">
                 <img src="img/foto.png" alt="">
             </div>
             <h1>Daniel Peña</h1>
-            <h2>Tecnologo en Desarrollo de Software</h2>
+            <h2>Tecnólogo en Desarrollo de Software</h2>
             <div class="redes">
                 <a href="#"><i class="fa-brands fa-facebook"></i></a>
                 <a href="#"><i class="fa-brands fa-linkedin"></i></a>
             </div>
+            <a href="https://maps.app.goo.gl/52LUgwna5DJUnaLc8" class="btn-ubicacion">Ubicación</a> <!-- Botón de ubicación -->
         </div>
     </section>
-    <!--Seccion sobre mi-->
+    <!--Sección sobre mí-->
     <section id="sobremi" class="sobremi">
         <div class="contenido-seccion">
-            <h2>Sobre mi</h2>
-            <p><span>Hola, soy Daniel Peña</span> Soy Tecnologo en desarrollo de software, 
-                y he ejercido mayormente como tecnico en sistemas en diversas empresas tanto 
-                del mundo del sector privado y el sector publico, me especializo mayormente en php,
-                javascrip y css.
+            <h2>Sobre mí</h2>
+            <p><span>Hola, soy Daniel Peña</span> Soy Tecnólogo en desarrollo de software, 
+                y he ejercido mayormente como técnico en sistemas en diversas empresas tanto 
+                del mundo del sector privado y el sector público, me especializo mayormente en PHP,
+                JavaScript y CSS.
             </p>
             <div class="fila">
                 <!--Datos personales-->
                 <div class="col">
                     <h3>Datos personales</h3>
                     <ul>
-                        <li>
-                            <strong>Cumpleaños</strong>
-                            31 de agosto
-                        </li>
-                        <li>
-                            <strong>Telefono</strong>
-                            312456789
-                        </li>
-                        <li>
-                            <strong>Email</strong>
-                            quierotrabajo@gmail.com
-                        </li>
-                        <li>
-                            <strong>Cargo</strong>
-                            <span>FREELANCE</span>
-                        </li>
+                        <li><strong>Cumpleaños</strong> 31 de agosto</li>
+                        <li><strong>Teléfono</strong> 312456789</li>
+                        <li><strong>Email</strong> quierotrabajo@gmail.com</li>
+                        <li><strong>Cargo</strong> <span>FREELANCE</span></li>
                     </ul>
-
                 </div>
                 <!--Intereses-->
                 <div class="col">
@@ -86,7 +91,7 @@
                         </div>
                         <div class="interes">
                             <i class="fa-solid fa-music"></i>
-                            <span>Musica</span>
+                            <span>Música</span>
                         </div>
                         <div class="interes">
                             <i class="fa-solid fa-volleyball"></i>
@@ -105,16 +110,16 @@
             </button>
         </div>
     </section>
-    <!--Seccion Habilidades-->
+    <!-- Sección Habilidades -->
     <section class="habilidades" id="habilidades">
         <div class="contenido-seccion">
             <h2>Habilidades</h2>
             <div class="fila">
-                <!--Habilidades tecnicas-->
+                <!--Habilidades técnicas-->
                 <div class="col">
-                    <h3>Habilidades Tecnicas</h3>
+                    <h3>Habilidades Técnicas</h3>
                     <div class="habilidad">
-                        <span>Javascrip</span>
+                        <span>JavaScript</span>
                         <div class="barra-habilidad">
                             <div class="progreso">
                                 <span>55%</span>
@@ -138,7 +143,7 @@
                         </div>
                     </div>
                 </div>
-                <!--Habilidades profesionlaes-->
+                <!--Habilidades profesionales-->
                 <div class="col">
                     <h3>Habilidades Profesionales</h3>
                     <div class="habilidad">
@@ -177,7 +182,7 @@
             </div>
         </div>
     </section>
-    <!--Seccion Curriculum-->
+    <!--Sección Curriculum-->
     <section id="curriculum" class="curriculum">
         <div class="contenido-seccion">
             <h2>Curriculum</h2>
@@ -185,22 +190,22 @@
                 <div class="col izquierda">
                     <h3>Educación</h3>
                     <div class="item izq">
-                        <h4>Tecnico en Sistemas</h4>
+                        <h4>Técnico en Sistemas</h4>
                         <span class="casa">Servicio Nacional de Aprendizaje (SENA)</span>
                         <span class="fecha">2020 - 2021</span>
-                        <p>Graduado con exelentes calificaciones y con la recomendacion y elogios de la mayoria de sus profesores,
-                            se graduo con gran capacidad profesional para asumir cualquier proyecto que le presenten.
+                        <p>Graduado con excelentes calificaciones y con la recomendación y elogios de la mayoría de sus profesores,
+                            se graduó con gran capacidad profesional para asumir cualquier proyecto que le presenten.
                         </p>
                         <div class="conectori">
                             <div class="circuloi"></div>
                         </div>
                     </div>
                     <div class="item izq">
-                        <h4>Tecnologo en desarrollo de software</h4>
+                        <h4>Tecnólogo en desarrollo de software</h4>
                         <span class="casa">Universidad del Valle</span>
                         <span class="fecha">2022 - 2025</span>
-                        <p>Graduado con exelentes calificaciones y con la recomendacion y elogios de la mayoria de sus profesores,
-                            se graduo con gran capacidad profesional para asumir cualquier proyecto que le presenten.
+                        <p>Graduado con excelentes calificaciones y con la recomendación y elogios de la mayoría de sus profesores,
+                            se graduó con gran capacidad profesional para asumir cualquier proyecto que le presenten.
                         </p>
                         <div class="conectori">
                             <div class="circuloi"></div>
@@ -210,25 +215,25 @@
                 <div class="col derecha">
                     <h3>Experiencia de trabajo</h3>
                     <div class="item der">
-                        <h4>Tecnico Auxiliar del Area de Gestion Tecnologica</h4>
+                        <h4>Técnico Auxiliar del Área de Gestión Tecnológica</h4>
                         <span class="casa">Emquilichao E.S.P</span>
                         <span class="fecha">6 meses</span>
-                        <p>Realizaba actividades tales como, atencion al publico, resolviendo dudas internas
-                            como a los demas empleados de la empresa y de cara al publico externo, reparacion de 
+                        <p>Realizaba actividades tales como, atención al público, resolviendo dudas internas
+                            como a los demás empleados de la empresa y de cara al público externo, reparación de 
                             equipos de la empresa, mantenimiento de la red interna y externa de la empresa y cargue/reporte de 
-                            documentos publicos a las entidades correspondientes.
+                            documentos públicos a las entidades correspondientes.
                         </p>
                         <div class="conectord">
                             <div class="circulod"></div>
                         </div>
                     </div>
                     <div class="item der">
-                        <h4>Tecnico en Sistemas</h4>
+                        <h4>Técnico en Sistemas</h4>
                         <span class="casa">Universidad del Valle</span>
                         <span class="fecha">2 años</span>
-                        <p>Realizo actividades tales como, atencion al publico, resolviendo dudas a los demas empleados 
-                            de la empresa y de cara al publico externo, reparacion de equipos de la empresa, 
-                            mantenimiento de la red interna y externa de la empresa y apoyo en la organizacion de diversos 
+                        <p>Realizo actividades tales como, atención al público, resolviendo dudas a los demás empleados 
+                            de la empresa y de cara al público externo, reparación de equipos de la empresa, 
+                            mantenimiento de la red interna y externa de la empresa y apoyo en la organización de diversos 
                             montajes para ciertos eventos de la empresa.
                         </p>
                         <div class="conectord">
@@ -239,7 +244,7 @@
             </div>
         </div>
     </section>
-    <!--Seccion portafolio-->
+    <!--Sección portafolio-->
     <section id="portafolio" class="portafolio">
         <div class="contenido-seccion">
             <h2>Portafolio</h2>
@@ -261,7 +266,7 @@
             </div>
         </div>
     </section>
-    <!--Seccion contacto-->
+    <!--Sección contacto-->
     <section id="contacto" class="contacto">
         <div class="contenido-seccion">
             <h2>Contacto</h2>
@@ -269,10 +274,10 @@
                 <!--Formulario-->
                 <div class="col">
                     <input type="text" placeholder="Tú nombre">
-                    <input type="text" placeholder="Numero de telefono">
+                    <input type="text" placeholder="Número de teléfono">
                     <input type="text" placeholder="Email">
                     <input type="text" placeholder="Tema a tratar">
-                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <textarea cols="30" rows="10" placeholder="Mensaje"></textarea>
                     <button>
                         Enviar mensaje <i class="fa-solid fa-message"></i>
                         <span class="overlay"></span>
@@ -289,9 +294,9 @@
                             </li>
                             <li>
                                 <i class="fa-solid fa-mobile"></i>
-                                Llamanos: 312456879
+                                Llámanos: 312456879
                             </li>
-                            <li></li>
+                            <li>
                                 <i class="fa-regular fa-envelope"></i>
                                 Email: quierotrabajo@gmail.com
                             </li>
@@ -310,7 +315,6 @@
             <a href="#"><i class="fa-brands fa-facebook"></i></a>
             <a href="#"><i class="fa-brands fa-linkedin"></i></a>
         </div>
-            
     </footer>
 
     <script src="script.js"></script>
